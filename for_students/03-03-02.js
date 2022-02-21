@@ -1,6 +1,7 @@
 // @ts-check
 export {};
 
+/** @type {HTMLCanvasElement} */
 const canvas = /** @type {HTMLCanvasElement} */ (document.getElementById("canvas1"));
 const context = canvas.getContext('2d');
 

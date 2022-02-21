@@ -30,9 +30,12 @@ function drawTriSquareTransform(context, xval) {
     context.restore();
 }
 
+/** @type {HTMLCanvasElement} */
 const canvas = /** @type {HTMLCanvasElement} */ (document.getElementById("canvas1"));
 const context = canvas.getContext('2d');
 
+
+/** @type {HTMLInputElement} */
 const slider = /** @type {HTMLInputElement} */ (document.getElementById("slider1"));
 
 // draw the initial things

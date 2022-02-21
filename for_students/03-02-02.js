@@ -1,5 +1,4 @@
 // @ts-check
-
 export {};
 
 import * as trisquare from "./03-02-TriSquare.js";

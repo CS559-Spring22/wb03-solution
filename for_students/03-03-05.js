@@ -9,6 +9,10 @@ function picture(canvas) {
     const context = canvas.getContext("2d");
     // student should use translate and scale to
     // change the coordinate system to [-100,100] [-100,100]
+    // Begin Example Solution
+    context.scale(canvas.width / 200, -canvas.height / 200);  // CS559 Example Code
+    context.translate(100, -100);
+    // End Example Solution
     // you online need to change line 1 and line 2
     console.log("Student will replace this line");  // line 1
     console.log("Student will replace this line");  // line 2

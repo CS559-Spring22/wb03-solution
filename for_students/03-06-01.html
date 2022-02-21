@@ -6,10 +6,25 @@
 </head>
 
 <body>
+    <p>The first example implements the most basic QuadCopter (without advanced points) that flies in a circle. The code is
+        easier to read and is enclosed by "Begin Simple Example Solution" and "End Simple Example Solution" comments.
+    </p>
+
     <canvas id="canvas1" height="600px" width="600px"></canvas>
+
+    <p>The next example implements the following features with three QuadCopters:</p>
+    <ol>
+        <li>The first one (best attempt to look like the Helicarrier from the Avengers) responds to mouse clicks. Each
+            mouse click adds a person waving at the QuadCopter. While there are no mouse clicks, a random person could
+            be added with a small probability.
+        <li>The second one (best attempt to look like the Gunship from Avatar) responds to arrow keys and the WASD keys
+            (QEZC also works).
+        <li>The third one (plain QuadCopter with Red-Green-Blue colors) just flies in circles.</li>
+    </ol>
+
+    <canvas id="canvas2" height="600px" width="600px"></canvas>
 
     <script src="03-06-01.js" type="module" defer></script>
 </body>
 
 </html>
-

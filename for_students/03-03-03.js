@@ -1,5 +1,5 @@
 // @ts-check
-export {};
+export { };
 
 import * as trisquare from "./03-02-TriSquare.js";
 
@@ -27,11 +27,14 @@ import * as trisquare from "./03-02-TriSquare.js";
     // keep my variable names
     const canvas = /** @type {HTMLCanvasElement} */ (document.getElementById("canvas2"));
     const context = canvas.getContext("2d");
-    // put the scale inside the loop
+    // scale first and then translate the right amount
     for (let r = 0; r < 4; r++) {
         for (let c = 0; c < 8; c++) {
             context.save();
             context.translate(c * 20, r * 20);
+            // Begin Example Solution
+            context.scale(0.5, 0.5); // CS559 Example Code
+            // End Example Solution
             trisquare.drawTriSquare(context);
             context.restore();
         }

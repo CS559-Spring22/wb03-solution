@@ -4,6 +4,7 @@ export {};
 
 import * as trisquare from "./03-02-TriSquare.js";
 
+/** @type {HTMLCanvasElement} */
 const canvas1 = /** @type {HTMLCanvasElement} */ (document.getElementById("canvas1"));
 const context1 = canvas1.getContext('2d');
 trisquare.drawTriSquare(context1);

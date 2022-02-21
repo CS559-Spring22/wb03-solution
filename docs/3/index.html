@@ -61,7 +61,9 @@
         
         
         
-		<div class="content post__content clearfix"><p>Now that we&rsquo;ve learned <code>scale</code> and <code>translate</code>, let&rsquo;s try to put them together!</p>
+		<div class="content post__content clearfix"><div class="dimbox">
+                    <h3>CS559 Spring 2022 Sample Solution</h3>
+                </div><p>Now that we&rsquo;ve learned <code>scale</code> and <code>translate</code>, let&rsquo;s try to put them together!</p>
 <p>The idea of putting transformations together is a very important part of computer graphics. It&rsquo;s important to understand it in the simple case (scale and translate), so that when we get to more complex transformations and more complex combinations, you will be able to appreciate what is happening.</p>
 <p>As a reminder, you should be looking at the code for each of these examples.</p>
 <h2 id="box-1-scale-and-translate">Box 1: Scale and Translate</h2>
@@ -121,7 +123,7 @@
 ></iframe>
 
 <p>Oh wait, the scale is missing :-) You need to fix the code - add the appropriate scaling, save and restore to make the lower box (canvas) <code>canvas2</code> look like the upper one.
-You can find this code in <a href="../../for_students/03-03-03.html" class="for_students">03-03-03.html</a> and <a href="../../for_students/03-03-03.js" class="for_students">03-03-03.js</a>.</p>
+You can find this code in <a href="../../for_students/03-03-03.html" class="for_students">03-03-03.html</a> and <a href="../../for_students/03-03-03.js" class="for_students">03-03-03.js</a>. You should add lines inside of the loop.</p>
 <h2 id="box-4-do-a-flip">Box 4: Do a Flip</h2>
 <p>With Canvas, we&rsquo;ve gotten used to the idea that the coordinate system starts in the upper left corner, the x axis goes to the right and the y axis goes down. The initial coordinate system has the Y axis scaled such that one unit in the y coordinate is one &ldquo;html pixel&rdquo; downward, but we can change that using scale.</p>
 <p>In math classes, we usually put the origin in the lower left corner and have y going upwards. We can now change the coordinate system so that Canvas works like we&rsquo;re used to! We need to scale the y axis and translate the origin. Or we can translate the origin and scale the y axis.</p>

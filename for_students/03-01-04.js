@@ -1,3 +1,4 @@
+// @ts-check
 /**
  * 
  * This is for drawTriSquare - it loads in a separate module that holds the code for the function
@@ -11,8 +12,6 @@
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
  * is an official reference
  */
-// @ts-check
-
 export {};
 
 import * as trisquare from "./03-01-TriSquare.js";
